@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <EditText
+            android:id="@+id/forget_phone_edit"
+            style="@style/persion_edit_style"
+            android:hint="@string/register_phone_hint"
+            android:inputType="phone"
+            android:singleLine="true"/>
+
+    <EditText
+            android:id="@+id/forget_phone_pass"
+            style="@style/persion_edit_style"
+            android:layout_below="@id/forget_phone_edit"
+            android:layout_marginTop="10dp"
+            android:hint="@string/forget_pass_new"
+            android:inputType="textPassword"
+            android:singleLine="true"/>
+
+    <EditText
+            android:id="@+id/forget_phone_again_pass"
+            style="@style/persion_edit_style"
+            android:layout_below="@id/forget_phone_pass"
+            android:layout_marginTop="10dp"
+            android:hint="@string/forget_pass_again"
+            android:inputType="textPassword"
+            android:singleLine="true"/>
+
+    <EditText
+            android:id="@+id/forget_phone_code"
+            style="@style/persion_edit_style"
+            android:layout_below="@id/forget_phone_again_pass"
+            android:layout_marginTop="10dp"
+            android:hint="@string/register_code_hint"
+            android:inputType="phone"
+            android:singleLine="true"/>
+
+    <Button
+            android:id="@+id/forget_code_btn"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/forget_phone_code"
+            android:layout_alignBottom="@id/forget_phone_code"
+            android:layout_alignRight="@id/forget_phone_code"
+            android:background="@drawable/btn_login"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/register_get_code"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_32"/>
+
+    <Button
+            android:id="@+id/forget_phone_btn"
+            style="@style/persion_login_btn_style"
+            android:layout_below="@id/forget_phone_code"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/forget_phone_submit"/>
+
+</RelativeLayout>

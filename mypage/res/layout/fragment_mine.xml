@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:dslv="http://schemas.android.com/apk/res/com.txnetwork.mypage"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:background="@color/mine_top_bg_color"
+                    android:layout_height="@dimen/top_bar_height">
+
+        <TextView android:text="我的导航"
+                  android:textSize="@dimen/text_size_34"
+                  android:textColor="@color/white"
+                  android:layout_centerInParent="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+
+        <TextView android:text="登录"
+                  android:id="@+id/login"
+                  android:textSize="@dimen/text_size_24"
+                  android:textColor="@color/white"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerInParent="true"
+                  android:layout_marginRight="10dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+
+        <TextView android:text="退出"
+                  android:id="@+id/logout"
+                  android:visibility="invisible"
+                  android:textColor="@color/white"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerInParent="true"
+                  android:layout_marginRight="10dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/add_type"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+        <ImageView android:src="@drawable/add_type"
+                   android:layout_centerInParent="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/alert"
+            android:visibility="gone"
+            android:textSize="@dimen/text_size_46"
+            android:layout_marginTop="200dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="您还未收藏任何网址,现在添加"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <ImageView android:id="@+id/first_add"
+               android:visibility="gone"
+               android:layout_gravity="center"
+               android:src="@drawable/first_add"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+    <com.txnetwork.mypage.dslv.DragSortListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:dividerHeight="3dp"
+            android:divider="@android:color/transparent"
+            android:fadingEdge="none"
+            dslv:float_background_color="@color/blue"
+            dslv:drag_enabled="true"
+            dslv:collapsed_height="2dp"
+            dslv:drag_scroll_start="0.33"
+            dslv:max_drag_scroll_speed="0.5"
+            dslv:float_alpha="0.6"
+            dslv:slide_shuffle_speed="0.3"
+            dslv:track_drag_sort="false"
+            dslv:use_default_controller="false"
+            dslv:drag_handle_id="@id/drag_handle"
+            dslv:sort_enabled="true"
+            dslv:remove_enabled="false"
+            dslv:drag_start_mode="onLongPress"
+            dslv:remove_mode="flingRemove"/>
+
+</LinearLayout>

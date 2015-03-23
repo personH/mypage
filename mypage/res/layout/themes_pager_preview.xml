@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                xmlns:app="http://schemas.android.com/apk/res/com.txnetwork.mypage"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:background="#dddddd"
+                    android:layout_height="45dp">
+
+        <TextView android:text="返回"
+                  android:id="@+id/back"
+                  android:layout_marginLeft="10dp"
+                  android:layout_centerInParent="true"
+                  android:layout_alignParentLeft="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+
+        <TextView android:text="皮肤预览"
+                  android:textSize="25sp"
+                  android:layout_centerInParent="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+
+        <TextView android:text="编辑"
+                  android:id="@+id/edit"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerInParent="true"
+                  android:layout_marginRight="10dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+            android:layout_below="@id/title"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <RelativeLayout android:id="@+id/downloadLayout"
+                    android:background="#dddddd"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+        <com.txnetwork.mypage.customview.ProgressBarButton
+                android:layout_centerInParent="true"
+                android:background="@color/white"
+                android:id="@+id/download"
+                custom:text="下载"
+                android:layout_width="100dp"
+                app:progress_reached_bar_height="40dp"
+                custom:progress="0"
+                app:progress_text_color="#000000"
+                style="@style/NumberProgressBar_Default"
+                android:layout_height="40dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

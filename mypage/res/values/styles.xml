@@ -1,0 +1,145 @@
+<resources xmlns:hlwang="http://schemas.android.com/apk/res/com.example.androidtest"
+           xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="ResourceStyle">
+        <item name="android:windowNoTitle">true</item>
+        <item name="activity_background">@android:drawable/screen_background_dark</item>
+        <item name="activity_button_show">@android:drawable/gallery_thumb</item>
+    </style>
+
+    <style name="ResourceStyle.default" parent="@style/ResourceStyle">
+        <item name="activity_background">@drawable/default_background</item>
+        <item name="activity_button_show">@drawable/default_background</item>
+    </style>
+
+    <style name="ResourceStyle.out" parent="@style/ResourceStyle">
+        <item name="activity_background">@drawable/default_background</item>
+        <item name="activity_button_show">@drawable/default_background</item>
+    </style>
+
+    <style name="NumberProgressBar_Default">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="max">100</item>
+        <item name="progress">0</item>
+
+        <item name="progress_reached_color">#3498DB</item>
+
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#3498DB</item>
+
+        <item name="progress_reached_bar_height">30dp</item>
+    </style>
+
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/add_dialog_bg_color</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="persion_edit_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/login_edit_text</item>
+        <item name="android:textColorHint">@color/login_edit_hint</item>
+        <item name="android:textSize">@dimen/text_size_28</item>
+    </style>
+
+    <style name="add_url_edittext_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/login_edit_text</item>
+        <item name="android:textColorHint">@color/login_edit_hint</item>
+        <item name="android:textSize">@dimen/text_size_28</item>
+    </style>
+
+    <style name="persion_login_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@drawable/btn_login_bg</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/front_text_white</item>
+        <item name="android:textSize">@dimen/text_size_46</item>
+    </style>
+
+    <style name="persion_register_tab_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/register_tab_color</item>
+        <item name="android:textSize">@dimen/text_size_30</item>
+    </style>
+
+    <style name="Crop"></style>
+
+    <style name="Crop.DoneCancelBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/crop__bar_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/crop__button_bar</item>
+    </style>
+
+    <style name="Crop.ActionButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/crop__selectable_background</item>
+    </style>
+
+    <style name="Crop.ActionButtonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">20dp</item>
+        <!-- Offsets left drawable -->
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:textColor">@color/crop__button_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="Crop.ActionButtonText.Done">
+        <item name="android:drawableLeft">@drawable/crop__ic_done</item>
+        <item name="android:text">@string/crop__done</item>
+    </style>
+
+    <style name="Crop.ActionButtonText.Cancel">
+        <item name="android:drawableLeft">@drawable/crop__ic_cancel</item>
+        <item name="android:text">@string/crop__cancel</item>
+    </style>
+    <!--- -->
+    <style name="tab_text_style">
+        <item name="android:textSize">@dimen/text_size_8</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/tab_text_color_normal</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="tab_img_style">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+</resources>

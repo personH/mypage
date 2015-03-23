@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/title_layout"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="50dp">
+
+    <RelativeLayout
+            android:id="@+id/back_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:padding="6dp"
+                android:src="@drawable/back_img"/>
+
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:shadowColor="@color/title_inverted_color"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:singleLine="true"
+                android:text="我的导航"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/text_size_36"/>
+
+        <TextView
+                android:id="@+id/rightBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="注册"
+                android:textColor="@color/text_color_nine"
+                android:textSize="@dimen/text_size_28"/>
+    </RelativeLayout>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:background="@color/divider_line"
+            android:layout_height="1px"/>
+
+</LinearLayout>

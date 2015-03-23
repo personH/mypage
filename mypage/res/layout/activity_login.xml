@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_color">
+
+    <include
+            android:id="@+id/title_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/title_view"/>
+
+    <EditText
+            android:id="@+id/login_account_edit"
+            style="@style/persion_edit_style"
+            android:layout_below="@id/title_view"
+            android:layout_marginTop="25dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/bg_phone_drawable"
+            android:hint="@string/login_account_hint"
+            android:inputType="phone"
+            android:singleLine="true"/>
+
+    <EditText
+            android:id="@+id/login_pass_edit"
+            style="@style/persion_edit_style"
+            android:drawableLeft="@drawable/bg_pass_drawable"
+            android:drawablePadding="10dp"
+            android:layout_below="@id/login_account_edit"
+            android:layout_marginTop="10dp"
+            android:hint="@string/login_pass_hint"
+            android:inputType="textPassword"
+            android:singleLine="true"/>
+
+    <Button
+            android:id="@+id/login_btn"
+            style="@style/persion_login_btn_style"
+            android:text="@string/login_text"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/remember_pass_btn"
+            android:layout_centerHorizontal="true"/>
+
+    <ImageView
+            android:id="@+id/remember_pass_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/login_btn"
+            android:layout_below="@id/login_pass_edit"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:src="@drawable/checkbox_no"/>
+
+    <TextView
+            android:id="@+id/remember_pass_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/remember_pass_img"
+            android:layout_below="@id/login_pass_edit"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="@string/remember_pass"
+            android:textColor="@color/remember_pass_text"
+            android:textSize="@dimen/text_size_28"/>
+
+    <TextView
+            android:id="@+id/forget_pass_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/login_btn"
+            android:layout_below="@id/login_pass_edit"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="@string/forget_pass"
+            android:textColor="@color/forget_pass_text"
+            android:textSize="@dimen/text_size_28"/>
+
+    <Button
+            android:id="@+id/qq_login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/btn_login_qq"/>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btnTextSize">20sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="crop__bar_height">56dp</dimen>
+
+    <!-- 字体 -->
+    <dimen name="text_size_80">40sp</dimen>
+    <dimen name="text_size_60">30sp</dimen>
+    <dimen name="text_size_46">25sp</dimen>
+    <dimen name="text_size_36">20sp</dimen>
+    <dimen name="text_size_34">18sp</dimen>
+    <dimen name="text_size_32">17sp</dimen>
+    <dimen name="text_size_30">16sp</dimen>
+    <dimen name="text_size_28">15sp</dimen>
+    <dimen name="text_size_26">14sp</dimen>
+    <dimen name="text_size_24">13sp</dimen>
+    <dimen name="text_size_22">12sp</dimen>
+    <dimen name="text_size_20">11sp</dimen>
+    <dimen name="text_size_8">8sp</dimen>
+
+    <!--ptr dimens -->
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+    <dimen name="top_bar_height">40dp</dimen>
+</resources>

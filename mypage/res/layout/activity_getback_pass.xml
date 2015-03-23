@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_color">
+    <include
+            android:id="@+id/title_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/title_view"/>
+
+    <LinearLayout android:id="@+id/step"
+                  android:layout_below="@id/title_view"
+                  android:background="@color/white"
+                  android:orientation="horizontal"
+                  android:gravity="center"
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp">
+        <TextView android:text="确认账号"
+                  android:textSize="@dimen/text_size_26"
+                  android:gravity="center"
+                  android:layout_weight="1"
+                  android:textColor="@color/blue"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+        <TextView android:text=">"
+                  android:textSize="20sp"
+                  android:textColor="@color/transparent_gray"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+        <TextView android:text="安全验证"
+                  android:textSize="@dimen/text_size_26"
+                  android:gravity="center"
+                  android:layout_weight="1"
+                  android:textColor="@color/blue"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+        <TextView android:text=">"
+                  android:textColor="@color/transparent_gray"
+                  android:textSize="20sp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+        <TextView android:text="验证"
+                  android:textSize="@dimen/text_size_26"
+                  android:gravity="center"
+                  android:layout_weight="1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <EditText
+            android:id="@+id/new_pass"
+            android:layout_below="@id/step"
+            style="@style/persion_edit_style"
+            android:visibility="invisible"
+            android:layout_marginTop="20dp"
+            android:hint="@string/new_pass"
+            android:inputType="textPassword"
+            android:singleLine="true"/>
+
+    <EditText
+            android:id="@+id/confirm_new_pass"
+            android:layout_below="@id/new_pass"
+            style="@style/persion_edit_style"
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:hint="@string/confirm_new_pass"
+            android:inputType="textPassword"
+            android:singleLine="true"/>
+
+
+    <EditText
+            android:id="@+id/phone_number"
+            android:layout_below="@id/step"
+            android:layout_marginTop="20dp"
+            style="@style/persion_edit_style"
+            android:hint="@string/register_phone_hint"
+            android:inputType="phone"
+            android:singleLine="true"/>
+
+    <EditText
+            android:id="@+id/verify_code"
+            android:layout_below="@id/phone_number"
+            style="@style/persion_edit_style"
+            android:layout_marginTop="10dp"
+            android:hint="@string/register_code_hint"
+            android:inputType="phone"
+            android:singleLine="true"/>
+
+    <Button
+            android:id="@+id/get_verify_code"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/verify_code"
+            android:layout_alignBottom="@id/verify_code"
+            android:layout_alignRight="@id/verify_code"
+            android:background="@drawable/btn_login"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/register_get_code"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_32"/>
+
+    <Button
+            android:id="@+id/submit"
+            style="@style/persion_login_btn_style"
+            android:layout_below="@id/verify_code"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/verify"/>
+
+</RelativeLayout>

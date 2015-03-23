@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res/com.txnetwork.mypage"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:background="@color/skin_top_bg_color"
+                    android:layout_height="@dimen/top_bar_height">
+
+        <TextView android:text="皮肤"
+                  android:textSize="@dimen/text_size_34"
+                  android:textColor="@color/skin_top_text_color"
+                  android:layout_centerInParent="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+
+        <TextView android:text="已下载"
+                  android:id="@+id/downloaded"
+                  android:textColor="@color/skin_top_text_color"
+                  android:textSize="@dimen/text_size_24"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerInParent="true"
+                  android:layout_marginRight="10dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <!-- tab页 -->
+    <LinearLayout android:id="@+id/navigation"
+                  android:orientation="horizontal"
+                  android:background="@color/white"
+                  android:layout_width="match_parent"
+                  android:layout_height="30dp">
+    </LinearLayout>
+
+    <com.txnetwork.mypage.pulltorefresh.PullToRefreshGridView
+            android:layout_margin="10dp"
+            android:id="@+id/gridview"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:numColumns="2"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            app:ptrDrawableBottom="@drawable/indicator_arrow"
+            app:ptrRotateDrawableWhilePulling="true"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:columnWidth="100dp"
+            android:stretchMode="columnWidth"
+            android:layout_weight="1"
+            android:gravity="fill"/>
+</LinearLayout>

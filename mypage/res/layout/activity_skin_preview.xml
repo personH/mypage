@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res/com.txnetwork.mypage"
+                android:id="@+id/background"
+                android:background="#e1e2e6"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:background="#dddddd"
+                    android:layout_height="@dimen/top_bar_height">
+
+        <ImageView android:src="@drawable/back_img"
+                   android:id="@+id/back"
+                   android:layout_centerInParent="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_width="40dp"
+                   android:layout_height="wrap_content"/>
+
+        <TextView android:text="皮肤预览"
+                  android:textSize="@dimen/text_size_34"
+                  android:textColor="@color/skin_top_text_color"
+                  android:layout_centerInParent="true"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout android:id="@+id/downloadLayout"
+                    android:background="#dddddd"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+        <com.txnetwork.mypage.customview.ProgressBarButton
+                android:layout_centerInParent="true"
+                android:background="@color/white"
+                android:id="@+id/download"
+                app:text="下载"
+                android:layout_width="100dp"
+                app:progress_reached_bar_height="40dp"
+                app:progress="0"
+                app:progress_text_color="#000000"
+                style="@style/NumberProgressBar_Default"
+                android:layout_height="40dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_below="@id/title"
+                    android:layout_above="@id/downloadLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image"
+                   android:layout_margin="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"/>
+        <ProgressBar android:id="@+id/progressbar"
+                     android:layout_centerInParent="true"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</RelativeLayout>

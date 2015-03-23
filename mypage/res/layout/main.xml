@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/background"
+                android:background="?attr/activity_background"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <LinearLayout android:id="@+id/navigation"
+                  android:layout_alignParentBottom="true"
+                  android:background="#dddddd"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="45dp">
+        <RelativeLayout android:id="@+id/tab1"
+                        android:layout_weight="1"
+                        android:background="?attr/activity_button_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+            <TextView android:id="@+id/tab1text"
+                      android:text="推荐导航"
+                      android:layout_centerInParent="true"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/tab2"
+                        android:layout_weight="1"
+                        android:background="?attr/activity_button_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+            <TextView android:id="@+id/tab2text"
+                      android:text="我的导航"
+                      android:layout_centerInParent="true"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/tab3"
+                        android:layout_weight="1"
+                        android:background="?attr/activity_button_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+            <TextView android:id="@+id/tab3text"
+                      android:text="皮肤管理"
+                      android:layout_centerInParent="true"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- VIewPager 主要是加载内容的 -->
+    <android.support.v4.view.ViewPager
+            android:layout_above="@id/navigation"
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</RelativeLayout>
+
